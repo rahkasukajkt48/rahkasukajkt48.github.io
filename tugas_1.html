@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas form</title>
+    <style>
+        #submit {
+            margin-top: 15px;
+        }
+
+        .hasil {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table border="0" class="tableform">
+            <form action="">
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><input type="text" id="Nama" placeholder="Masukan Nama anda wahai teman"></td>
+                </tr>
+                <tr>
+                    <td>Kelas</td>
+                    <td>:</td>
+                    <td><input type="text" id="Kelas" placeholder="Masukan Kelas anda wahai teman"></td>
+                </tr>
+                <tr>
+                    <td>Umur</td>
+                    <td>:</td>
+                    <td><input type="text" id="Umur" placeholder="Masukan Umur anda wahai teman"></td>
+                </tr>
+                <tr>
+                    <td>Hobby </td>
+                    <td>:</td>
+                    <td><input type="text" id="Hobby" placeholder="Masukkan Hobby anda wahai teman" name="Hobby"></td>
+                </tr>
+            </form>
+        </table>
+        <button id="submit">Submit</button>
+    </div>
+
+    <div class="Hasil">
+        <div class="result_Nama"></div>
+        <div class="result_Kelas"></div>
+        <div class="result_Umur"></div>
+        <div class="result_Hobby"></div>
+    </div>
+    
+    <script>
+        const submit = document.querySelector('#Submit');
+
+        submit.addEventListener('click', function(){
+            dataform()
+        })
+    </script>
+</body>
+</html>
