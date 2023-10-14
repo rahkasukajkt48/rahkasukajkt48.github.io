@@ -1,0 +1,42 @@
+<html>
+    <body>
+        <table border="2">
+            <tr>
+                <td><a href="home.html">HOME</a></td>
+                <td><a href="galery.html">GALERY</a></td>
+                <td><a href="Tugas IT WEBSITE.html">ABOUT ME</a></td>
+                <td><a href="kontak.html">CONTACT</a></td>
+            </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>nama</th>
+                    <th>:</th>
+                    <th><input type="text" id="nama"></th>
+                </tr>
+                <tr>
+                    <th>email</th>
+                    <th>:</th>
+                    <th><input type="text" id="email"></th>
+                </tr>
+                <tr>
+                    <th>destription</th>
+                    <th>:</th>
+                    <th><textarea name="" id="descrption" cols="30" rows="10"></textarea></th>
+                </tr>
+            </table>
+            <button onclick="data()">submit</button>
+
+            <script>
+                function data() {
+                    var Nama = document.querySelector('#nama').value
+                    var email = document.querySelector('#email').value
+                    var discripsi = document.querySelector('#descrption').value
+                    console.log(Nama)
+                    console.log(email)
+                    console.log(discripsi)
+                    alert('Nama : ' + Nama + '\n Email : ' + email + '\n Deskripsi : ' + discripsi)
+                }
+            </script>
+    </body>
+</html>
